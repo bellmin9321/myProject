@@ -1,0 +1,43 @@
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>layout01</title>
+        <style>
+            body{background: #c8e6c9;}
+            #wrap {width: 1000px; height: 900px; margin: 0 auto; font-size: 40px; color: #fff;
+            text-align: center; text-transform: uppercase;}
+            #header {width: 1000px; height: 100px; line-height: 100px; background: #2e7d32;}
+            #nav {width: 1000px; height: 100px; line-height: 100px; background: #388e3c;}
+            #side {float: left; width: 300px; height: 600px; line-height: 600px; background: #43a047;}
+            #contents {float: left; width: 700px; height: 600px; line-height: 600px; background: #4caf50;}
+            #footer {float: left; width: 1000px; height: 100px; line-height: 100px; background: #66bb6a;}
+        </style>
+    </head>
+    <body> 
+        <h1>2030 경알못 깨우치기</h1>
+        <div id="wrap">
+            <div id="header">header</div>
+            <div id="nav">nav</div>
+            <div id="side">side</div>
+            <div id="contents">contents</div >
+            <div id="footer">footer</div>
+        </div> 
+        <!--script-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            //버튼을 클릭하면 전체 메뉴가 보임
+            $(".tit .btn").click(function(e){
+                e.preventDefault();
+                //$("#cont_nav").css("display","block");
+                //#cont_nav {display:block} css를 jquery 로 바꿧을 때 윗줄과 같이 됨.
+                //$("#cont_nav").show();
+                //$("#cont_nav").fadeIn();
+                //$("#cont_nav").slideDown();
+                //$("#cont_nav").toggle();
+                //$("#cont_nav").fadeToggle();
+                $("#cont_nav").slideToggle();
+                $(this).toggleClass("on");   
+            });
+        </script>
+    </body>
+</html>

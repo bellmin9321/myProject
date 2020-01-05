@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mil's webtoon">
+    <meta name="description" content="밀작가의 웹툰 플랫폼입니다.">
+    <meta name="keywards" content="웹툰, 만화, 그림, 일러스트">
+    <title>---Mil's Exhibition</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        /* body {background-color} */
+        #wrap {width: 1900px; margin: 0 auto;}
+        #header {width: 1200px; height: 200px; margin: 0 auto; background-color:#ffffff;}
+        #nav {width: 1200px; height: 50px; margin: 0 auto; background-color: #ffffff;}
+        .visual {width: 100%; height: 600px; background-color: #ffeeff;}
+        #content {width: 100%; height: 300px; margin: 0 auto; background-color:#ffffff;}
+        #share {width: 1200px; height: 150px; margin: 0 auto; background-color:#ffffff;}
+        #footer {width: 1200px; height: 100px; margin: 0 auto; background-color: #ffffff;}
+
+    </style>
+
+    <!--style-->
+    <link rel="stylesheet" href="/public/reset.css">
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="stylesheet" href="/public/css/font-awesome.css">
+    <link rel="stylesheet" href="/public/cdn.css"/>
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+
+
+</head>
+<body>
+        <!-- 스킵 내비게이션 -->
+        <div id="skip">
+                <a rel="bookmark" href="#cont_nav">전체 메뉴 바로가기</a>
+                <a rel="bookmark" href="#cont_ban">배너 영역 바로가기</a>
+                <a rel="bookmark" href="#cont_cont">컨텐츠 영역 바로가기</a>
+        </div>
+        <div id="wrap">
+            <header id="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="header">
+                            <div class="header-menu">
+                                <div>{{ age }}살{{ name }}님 환영합니다.</div>
+                            </div>
+                            <!--//헤더 메뉴-->
+                            <div class="header-tit">
+                                <h1>Mil's Exhibition</h1></br>
+                                <a href="https://www.instagram.com/muje53/?hl=ko" target="_blank">Webtoon Author - Mil</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!--header-->
+
+            <nav id="nav">
+                <div class="container">
+                    <div class="row">
+                        <div class="nav">
+                            <h2 class="ir_su">사이트 메뉴</h2>
+                            <div>
+                                <h3><a href="/">HOME</a></h3>
+                            </div>
+                            <div>
+                                <h3><a href="#">COMPANY</a></h3>
+                            </div>
+                            <div>
+                                <h3><a href="#">PROJECTS</a></h3>
+                            </div>    
+                            <div>
+                                <h3><a href="#">SERVICE</a></h3>
+                            </div>  
+                            <div>
+                                <h3><a href="#">Question</a></h3>                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!--nav-->
+
+            <article class="visual">
+                <div><a href="레노바티오.html"><img src="/public/img/썸네일.jpg" alt=""></a></div>
+                <div><a href="#"><img src="/public/img/썸네일.jpg" alt=""></a></div>
+                <div><a href="#"><img src="/public/img/썸네일.jpg" alt=""></a></div>
+                <div><a href="#"><img src="/public/img/썸네일.jpg" alt=""></a></div>
+            </article>
+
+            <!--배너-->
+            
+            <section id="content">
+                <div class="content_container">
+                    <h2 class="ir_su">사이트 컨텐츠</h2>
+                    <a href="/illust"><div class="pic1"><div class="text">일러스트</div></div></a>
+                    <a href="/webtoon"><div class="pic2"><div class="text">웹툰</div></div></a>
+                    <a href="#"><div class="pic3"><div class="text">타투도안</div></div></a>
+                    <a href="/board"><div class="pic4"><div class="text">방명록</div></div></a>
+                </div>    
+            </section>
+
+            <!--컨텐츠-->
+
+            <div id="share">
+                <div class="share_icon">
+                    <ul>
+                        <li><a href="#" class="Facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i><span>Fackbook</span></a></li>
+                        <li><a href="#" class="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a></li>
+                        <li><a href="#" class="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a></li>
+                        <li><a href="#"><i class="fa fa-slack" aria-hidden="true"></i><span>Slack</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <footer id="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="footer">
+                                <ul>
+                                    <li><a href="#">사이트 도움말</a></li>
+                                    <li><a href="#">사이트 이용약관</a></li>
+                                    <li><a href="#">사이트 운영원칙</a></li>
+                                    <li><a href="#"><strong>개인정보취급방침</strong></a></li>
+                                    <li><a href="#">책임의 한계와 법적고지</a></li>
+                                    <li><a href="#">게시중단요청서비스</a></li>
+                                    <li><a href="#">고객센터</a></li>
+                                </ul>
+                                <address>
+                                    Copyright ©
+                                    <a href="https://www.instagram.com/muje53/?hl=ko"><strong>Mil</strong></a>
+                                    All Rights Reserved.
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+            </footer>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <!--스크립트-->
+        <script type="text/javascript">
+        $('.visual').slick(); 
+
+        //http://www.facebook.com/sharer.php?u={페이지 제목}&t={페이지링크}
+            //http://twitter.com/intent/tweet?text={페이지 제목}&url={페이지링크}
+            //https://share.naver.com/web/shareView.nhn?url={페이지링크}&title={페이지 제목}
+            //https://plus.google.com/share?url={페이지링크}&t={페이지 제목}
+            $(".Facebook").click(function(e){
+                e.preventDefault();
+                window.open('https://www.facebook.com/sharer/sharer.php?u=' +encodeURIComponent(document.URL)+'&t='+encodeURIComponent(document.title), 'facebooksharedialog', 'menubar=no, toolbar=no, resizable=yes, scrollbars=yes, height=300, width=600'); 
+            });
+            $(".Instagram").click(function(e){
+                e.preventDefault();
+                window.open('https://www.instagram.com/muje53/?hl=ko' +encodeURIComponent(document.URL)+'%20-%20'+encodeURIComponent(document.title), 'twittersharedialog', 'menubar=no, toolbar=no, resizable=yes, scrollbars=yes, height=300, width=600');
+            });
+            $(".Twitter").click(function(e){
+                e.preventDefault();
+                window.open('https://twitter.com/intent/tweet?text=[%EA%B3%B5%EC%9C%A0]%20' +encodeURIComponent(document.URL)+'%20-%20'+encodeURIComponent(document.title), 'twittersharedialog', 'menubar=no, toolbar=no, resizable=yes, scrollbars=yes, height=300, width=600');
+            });
+        </script>
+</body>
+</html>

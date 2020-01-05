@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Bellmin's Board</title>
+    </head>
+    <body>
+        <ol>
+            {{#each boards}}
+                <p>
+                    <a href="/boards/{{ this.id }}">
+                    <div>제목 : {{ this.title}} /
+                         내용 : {{ this.content }}</div></a>
+                </p>
+            {{/each}}
+        </ol>
+    </body>
+</html>    

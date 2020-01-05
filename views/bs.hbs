@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/public/bs.css">
+    </head>
+    <body>
+        <ol>
+            {{#each posts}}
+                <li>{{ this.title }}</li>
+                <h1>{{ this.content }}</h1>
+            {{/each}}
+        </ol>
+    </body>
+</html>

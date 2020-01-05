@@ -1,0 +1,41 @@
+<html>
+    <head></head>
+    <body>
+        ajax leanr
+        <div class="here"></div>
+        <button class="btn">데이터 가져오기</button>
+
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>        
+        <script>
+
+            // AJAX 자동차
+
+            // axios 소나타
+
+            /*
+            axios.get("/boards2").then(function(response){
+                // response.data.boards
+                console.log(response.data)
+            })
+            */
+
+            axios.get("/friends").then(function(response){
+                console.log(response.data)
+            })
+
+
+            $(".btn").click(function(){
+                axios.get("/boards2").then(function(response){
+                    for(let i = 0; i < response.data.boards.length; i++) {
+                        $(".here").append(response.data.boards[i])
+                    }
+                })
+            })
+           
+        </script>
+    </body>
+</html>

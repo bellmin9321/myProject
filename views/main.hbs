@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <style>
+            .login {
+                color: red;
+            }
+
+            .guest {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Main Page</h1>
+        <div><h2>회원님 웹사이트에 오신 것을 환영합니다</h2></div>
+        <br>
+        {{#if isLogin}}
+            <div class="login">welcome!</div>
+        {{else}}
+            <div class="guest">who are you</div>
+        {{/if}}
+
+    </body>
+</html>

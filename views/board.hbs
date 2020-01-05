@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Board</title>
+    </head>
+    <body>
+        <h1>게시판 만들기</h1>
+            <form action="/board_process">
+            <table border="1" style="width:600px">
+            <caption>게시판</caption>
+            <tbody>
+                <tr>
+                    <td>작성자</td>
+                     <td><input type="text" name="brdwriter" size="20" maxlength="20"></td>
+                </tr> 
+                <tr>
+                    <td>제목</td>
+                    <td><input type="text" name="brdtitle" size="70" maxlength="250"></td>
+                </tr>
+                <tr>
+                    <td>내용</td>
+                    <td><textarea name="brdmemo" rows="5" cols="60"></textarea></td>
+                    <button>글쓰기</button>
+                </tr>
+            </tbody>
+            </form>
+    </body>
+</html>
