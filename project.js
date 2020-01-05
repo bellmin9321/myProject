@@ -30,6 +30,10 @@ connection.query("select * from users;", function(err, rows){
 app.use(cookieParser())
 app.use(bodyParser.urlencoded({ extended : false }))
 
+app.get("/new", function(req, res){
+    res.send("<h1>new</h1>")
+})
+
 app.get("/write", function(req, res){
     res.render("write") // render에는 "" 안에 / 안붙임
 })
